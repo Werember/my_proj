@@ -298,5 +298,200 @@
       eligendi voluptatibus reiciendis, unde, est possimus adipisci ad nam
       nulla.
     </p>
+
+    <span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, inventore
+      sunt nulla laborum optio harum ipsam impedit doloremque iste quidem
+      dolores, a consectetur cupiditate debitis ipsa facere architecto maiores
+      non nemo asperiores minus hic quas, itaque fugiat! Commodi, repellat aut
+      eligendi voluptatibus reiciendis, unde, est possimus adipisci ad nam
+      nulla.
+    </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+      .section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 200px;
+      }
+      
+      .skills {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 50px;
+        margin-bottom: 30px;
+      }
+      
+      .diagram {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100px;
+      }
+      
+      .skillBLock {
+        width: 20px;
+        margin: 0px 30px;
+        padding: 0px;
+        height: 380px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+      }
+      
+      .skillBLock:first-child .column {
+        background: #3da1ff;
+        height: calc(350px / 100 * 45.3 * 2); /*85%*/
+        animation: appFir 2s 1;
+      }
+      
+      .skillBLock:nth-child(2) .column {
+        background: #1e89ee;
+        height: calc(350px / 100 * 32.6 * 2); /*90%*/
+        animation: appSec 2s 1;
+      }
+      
+      .skillBLock:nth-child(3) .column {
+        background: #3da1ff;
+        height: calc(350px / 100 * 14.7 * 3); /*70%*/
+        animation: appThi 2s 1;
+      }
+      
+      .skillBLock:last-child .column {
+        background: #0083fd;
+        height: calc(350px / 100 * 6.3 * 4); /*75%*/
+        animation: appFou 2s 1;
+      }
+      
+      .column span {
+        transform: rotate(-90deg);
+        position: absolute;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        animation: app 3s 1;
+      }
+      
+      .name {
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      
+      @keyframes appFir {
+        0% {
+          height: 0;
+        }
+        20% {
+          height: 0;
+        }
+        100% {
+          height: calc(350px / 100 * 85);
+        }
+      }
+      
+      @keyframes appSec {
+        0% {
+          height: 0;
+        }
+        20% {
+          height: 0;
+        }
+        100% {
+          height: calc(350px / 100 * 90);
+        }
+      }
+      
+      @keyframes appThi {
+        0% {
+          height: 0;
+        }
+        20% {
+          height: 0;
+        }
+        100% {
+          height: calc(350px / 100 * 70);
+        }
+      }
+      
+      @keyframes appFou {
+        0% {
+          height: 0;
+        }
+        20% {
+          height: 0;
+        }
+        100% {
+          height: calc(350px / 100 * 75);
+        }
+      }
+      
+      @keyframes app {
+        0% {
+          opacity: 0;
+        }
+        70% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <div class="section">
+      <div class="skills"></div>
+  
+      <div class="diagram">
+        <div class="skillBLock">
+          <div class="column">
+            <span>Ұзақ кезек</span>
+          </div>
+          <span class="name">45.3%</span>
+        </div>
+        <div class="skillBLock">
+          <div class="column">
+            <span>Өнімнің аздығы</span>
+          </div>
+          <span class="name">32.6%</span>
+        </div>
+        <div class="skillBLock">
+          <div class="column">
+            <span>Бәрі жақсы</span>
+        </div>
+          <span class="name">14.7%</span>
+        </div>
+        <div class="skillBLock">
+          <div class="column">
+            <span>Өзге</span>
+          </div>
+          <span class="name">6.3%</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
